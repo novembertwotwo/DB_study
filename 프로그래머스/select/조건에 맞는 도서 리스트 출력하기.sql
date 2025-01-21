@@ -1,0 +1,4 @@
+select BOOK_ID,	DATE_FORMAT(PUBLISHED_DATE,"%Y-%m-%d")
+from  BOOK
+where Year(PUBLISHED_DATE) = 2021 && CATEGORY =  '인문'
+order by PUBLISHED_DATE
